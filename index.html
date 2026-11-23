@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOCO — HaxBall no desktop</title>
+  <meta name="description" content="Entre em salas, desafie jogadores e prove que você é o melhor.">
+  <link rel="icon" type="image/png" href="imgs/toco-app-ico.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,700;1,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-layer" aria-hidden="true"></div>
+
+  <main class="page">
+    <!-- Hero -->
+    <section class="hero-screen">
+      <header class="brand reveal" style="--delay: 0ms;">
+        <img src="imgs/toco-logo.png" alt="TOCO" class="brand-logo">
+      </header>
+
+      <div class="hero-center">
+        <div class="version-pill reveal" style="--delay: 40ms;">
+          <span class="pill-dot" aria-hidden="true"></span>
+          <span id="pill-text">TOCO está disponível</span>
+        </div>
+
+        <h1 class="hero-title reveal" style="--delay: 80ms;">
+          <span class="title-white">BAIXE</span> <span class="title-accent">TOCO</span>
+        </h1>
+
+        <p class="hero-subtitle reveal" style="--delay: 120ms;">
+          Entre em salas, desafie jogadores e prove que você é o melhor.
+        </p>
+
+        <div class="meta-bar reveal" style="--delay: 160ms;" aria-label="Informações do arquivo">
+          <div class="meta-item">
+            <div class="meta-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M2 3.75 10.7 2.5v8.75H2V3.75zm9.8-1.39L22 1v10.25H11.8V2.36zM2 12.75h8.7v8.75L2 20.25v-7.5zm9.8 0H22V23l-10.2-1.36v-8.89z"/>
+              </svg>
+            </div>
+            <div class="meta-text">
+              <span class="meta-label">Windows 10/11</span>
+              <span class="meta-value">64-bit</span>
+            </div>
+          </div>
+
+          <div class="meta-divider" aria-hidden="true"></div>
+
+          <div class="meta-item">
+            <div class="meta-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3v12"/>
+                <path d="m7 10 5 5 5-5"/>
+                <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/>
+              </svg>
+            </div>
+            <div class="meta-text">
+              <span class="meta-label">Tamanho</span>
+              <span class="meta-value" id="meta-size">...</span>
+            </div>
+          </div>
+
+          <div class="meta-divider" aria-hidden="true"></div>
+
+          <div class="meta-item">
+            <div class="meta-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2"/>
+                <line x1="16" y1="2" x2="16" y2="6"/>
+                <line x1="8" y1="2" x2="8" y2="6"/>
+                <line x1="3" y1="10" x2="21" y2="10"/>
+              </svg>
+            </div>
+            <div class="meta-text">
+              <span class="meta-label">Atualizado em</span>
+              <span class="meta-value" id="meta-date">...</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="actions-row reveal" style="--delay: 200ms;">
+          <button type="button" class="download-btn" id="open-download-modal-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 3v12"/>
+              <path d="m7 10 5 5 5-5"/>
+              <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/>
+            </svg>
+            <span id="download-label">Baixar TOCO</span>
+          </button>
+
+          <button type="button" class="changelog-btn" id="open-changelog-btn">
+            <span>Changelogs</span>
+          </button>
+        </div>
+
+        <div class="platforms-soon reveal" style="--delay: 240ms;">
+          <span class="platforms-label">Em breve no</span>
+          <span class="platform-pill">Linux &amp; Mac</span>
+          <span class="platform-pill">Android &amp; iOS</span>
+        </div>
+      </div>
+
+      <a href="#screens" class="scroll-cue reveal" style="--delay: 300ms;" aria-label="Rolar para ver o app">
+        <span>Veja por dentro</span>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m6 9 6 6 6-6"/>
+        </svg>
+      </a>
+    </section>
+
+    <!-- Scroll Vertical Estilo Framer -->
+    <section class="screens-section" id="screens">
+      <article class="framer-block">
+        <div class="framer-copy">
+          <span class="framer-tag">Ao abrir</span>
+          <h2>Seu nick e suas teclas</h2>
+          <p>Arrume seu avatar, seus botões de chute e o extrapolation antes de entrar.</p>
+        </div>
+        <div class="framer-frame">
+          <img src="imgs/toco-nick.png" alt="Configuração inicial do TOCO">
+        </div>
+      </article>
+
+      <article class="framer-block">
+        <div class="framer-copy">
+          <span class="framer-tag">Lobby</span>
+          <h2>Ache sala rápido</h2>
+          <p>Filtre por salas perto de você, sem senha ou com vaga aberta.</p>
+        </div>
+        <div class="framer-frame">
+          <img src="imgs/toco-lobby.png" alt="Lista de salas do TOCO">
+        </div>
+      </article>
+
+      <article class="framer-block">
+        <div class="framer-copy">
+          <span class="framer-tag">Na sala</span>
+          <h2>Tudo no lugar</h2>
+          <p>Mude de time, chame amigos pelo link e grave seus replays.</p>
+        </div>
+        <div class="framer-frame">
+          <img src="imgs/toco-sala-spec.png" alt="Tela de sala do TOCO">
+        </div>
+      </article>
+
+      <article class="framer-block">
+        <div class="framer-copy">
+          <span class="framer-tag">Em jogo</span>
+          <h2>Liso e sem delay</h2>
+          <p>FPS solto, placar limpo e resposta na hora em cada toque.</p>
+        </div>
+        <div class="framer-frame">
+          <img src="imgs/toco-empartida.png" alt="Partida no TOCO">
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- Popup de Download simples e direto -->
+  <div class="modal-backdrop" id="download-modal" hidden>
+    <div class="toco-dialog" role="dialog" aria-modal="true" aria-labelledby="download-modal-title">
+      <div class="toco-dialog-top">
+        <h2 class="toco-dialog-title" id="download-modal-title">Aviso rápido</h2>
+        <button type="button" class="dialog-close" id="close-download-modal-btn" aria-label="Fechar">✕</button>
+      </div>
+
+      <div class="toco-notice-list">
+        <div class="toco-notice-item">
+          <h3>Sem coleta de dados</h3>
+          <p>O TOCO não coleta nada seu. Nick, teclas e perfil ficam salvos só no seu PC.</p>
+        </div>
+
+        <div class="toco-notice-item">
+          <h3>Se o Windows avisar ao abrir</h3>
+          <p>Como o app ainda não tem assinatura paga da Microsoft, o Windows pode mostrar uma tela azul na primeira vez.</p>
+          <div class="smartscreen-flow">
+            <span>Clique em <strong>Mais informações</strong></span>
+            <span class="flow-arrow">→</span>
+            <span><strong>Executar assim mesmo</strong></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="toco-dialog-actions">
+        <button type="button" class="btn-ghost" id="cancel-download-btn">Fechar</button>
+        <a href="https://github.com/guivtl/toco-releases/releases/latest" class="download-btn dialog-confirm-btn" id="confirm-download-btn">
+          <span id="confirm-download-label">Baixar agora</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de Changelogs -->
+  <div class="modal-backdrop" id="changelog-modal" hidden>
+    <div class="toco-dialog changelog-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="toco-dialog-top">
+        <h2 class="toco-dialog-title" id="modal-title">Changelogs</h2>
+        <button type="button" class="dialog-close" id="close-modal-btn" aria-label="Fechar">✕</button>
+      </div>
+      <div class="changelog-scroll" id="changelog-list">
+        <p class="loading-state">Carregando...</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
